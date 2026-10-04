@@ -1,0 +1,132 @@
+site_name: Blog Tempest
+site_url: https://projetotempest.github.io/blog/
+site_description: >-
+  Conhecimento aberto sobre as tecnologias que usamos e construímos no
+  Projeto Tempest: Python e FastAPI no backend, JavaScript e React no
+  frontend, visão computacional e arquitetura de serviços.
+site_author: Projeto Tempest
+repo_url: https://github.com/ProjetoTempest/blog
+repo_name: ProjetoTempest/blog
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 Projeto Tempest — conteúdo sob CC BY 4.0
+
+theme:
+  name: material
+  language: pt-BR
+  icon:
+    logo: material/weather-lightning
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.svg
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Usar tema claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Usar tema escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Seguir o sistema
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.tabs.link
+
+plugins:
+  - search:
+      lang: pt
+  - blog:
+      blog_dir: .
+      blog_toc: true
+      post_date_format: long
+      post_url_format: "{date}/{slug}"
+      post_readtime: true
+      post_excerpt: required
+      archive_name: Arquivo
+      archive_date_format: MMMM yyyy
+      categories_name: Categorias
+      categories_allowed:
+        - tempest-fastapi-sdk
+        - tempest-react-sdk
+        - Python
+        - FastAPI
+        - JavaScript
+        - React
+        - Visão Computacional
+        - Arquitetura
+        - Comunidade
+      draft: false
+      draft_on_serve: true
+  - tags
+  - rss:
+      match_path: "posts/.*"
+      date_from_meta:
+        as_creation: date.created
+      categories:
+        - categories
+        - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: [examples]
+      check_paths: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ProjetoTempest
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/tempest-fastapi-sdk/
+    - icon: fontawesome/brands/npm
+      link: https://www.npmjs.com/package/tempest-react-sdk
+    - icon: material/rss
+      link: https://projetotempest.github.io/blog/feed_rss_created.xml
+
+nav:
+  - Blog:
+      - index.md
+  - tempest-fastapi-sdk: /blog/category/tempest-fastapi-sdk/
+  - tempest-react-sdk: /blog/category/tempest-react-sdk/
+  - Sobre: sobre.md
