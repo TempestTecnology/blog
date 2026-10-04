@@ -5,8 +5,8 @@ Python + [`tempest-fastapi-sdk`](https://pypi.org/project/tempest-fastapi-sdk/)
 no backend, JavaScript + [`tempest-react-sdk`](https://www.npmjs.com/package/tempest-react-sdk)
 no frontend.
 
-🌐 **<https://projetotempest.github.io/blog/>** · RSS:
-[`feed_rss_created.xml`](https://projetotempest.github.io/blog/feed_rss_created.xml)
+🌐 **<https://tempesttecnology.github.io/blog/>** · RSS:
+[`feed_rss_created.xml`](https://tempesttecnology.github.io/blog/feed_rss_created.xml)
 
 Feito com [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) e o
 [plugin de blog](https://squidfunk.github.io/mkdocs-material/plugins/blog/)
