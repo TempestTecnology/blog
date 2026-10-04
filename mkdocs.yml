@@ -1,12 +1,12 @@
 site_name: Blog Tempest
-site_url: https://projetotempest.github.io/blog/
+site_url: https://tempesttecnology.github.io/blog/
 site_description: >-
   Conhecimento aberto sobre as tecnologias que usamos e construímos no
   Projeto Tempest: Python e FastAPI no backend, JavaScript e React no
   frontend, visão computacional e arquitetura de serviços.
 site_author: Projeto Tempest
-repo_url: https://github.com/ProjetoTempest/blog
-repo_name: ProjetoTempest/blog
+repo_url: https://github.com/TempestTecnology/blog
+repo_name: TempestTecnology/blog
 edit_uri: edit/main/docs/
 copyright: Copyright &copy; 2026 Projeto Tempest — conteúdo sob CC BY 4.0
 
@@ -116,13 +116,13 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/ProjetoTempest
+      link: https://github.com/TempestTecnology
     - icon: fontawesome/brands/python
       link: https://pypi.org/project/tempest-fastapi-sdk/
     - icon: fontawesome/brands/npm
       link: https://www.npmjs.com/package/tempest-react-sdk
     - icon: material/rss
-      link: https://projetotempest.github.io/blog/feed_rss_created.xml
+      link: https://tempesttecnology.github.io/blog/feed_rss_created.xml
 
 nav:
   - Blog:

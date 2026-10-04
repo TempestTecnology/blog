@@ -20,7 +20,7 @@ as tecnologias que usa no dia a dia e as que desenvolve.
 ## Quer contribuir?
 
 Todo post é um arquivo Markdown no
-[repositório do blog](https://github.com/ProjetoTempest/blog). Abra uma issue
+[repositório do blog](https://github.com/TempestTecnology/blog). Abra uma issue
 com a ideia ou um PR com o rascunho — o passo a passo está no `README.md`.
 
 ## Licença
