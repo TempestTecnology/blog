@@ -11,5 +11,5 @@ docs = [
     "mkdocs-rss-plugin>=1.19.0",
 ]
 examples = [
-    "tempest-fastapi-sdk>=0.303.0",
+    "tempest-fastapi-sdk[sqlite]>=0.303.0",
 ]
